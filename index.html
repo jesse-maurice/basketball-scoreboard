@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basketball Scoreboard</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <div class="img-container">
+      <img src="images/board_component_with_lion_logo 1.png" alt="board-image">
+    </div>
+    <div class="score-board">
+      <div class="score-board-left">
+        <h1>home</h1>
+        <h2 id="home-score" class="score">0</h2>
+        <div class="score-board-left-buttons">
+          <button onclick="incrementHomeOne()">+1</button>
+          <button onclick="incrementHomeTwo()">+2</button>
+          <button onclick="incrementHomeThree()">+3</button>
+        </div>
+      </div>
+      <div class="timer-container">
+        <span id="timer">60:00</span>
+      </div>
+      <div class="score-board-right">
+        <h1>guest</h1>
+        <h2 id="guest-score" class="score">0</h2>
+        <div class="score-board-right-buttons">
+          <button onclick="incrementGuestOne()">+1</button>
+          <button onclick="incrementGuestTwo()">+2</button>
+          <button onclick="incrementGuestThree()">+3</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

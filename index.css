@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("images/background-image.png");
+  background-size: 100%;
+  background-position: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.img-container {
+  position: absolute;
+  z-index: 1; 
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.score-board{
+  width: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap:30px;
+  position: absolute;
+  z-index: 1;
+  top:57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 2px solid red; */
+}
+
+.score-board-left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score-board-right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score-board-left-buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.score-board-right-buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+h1{
+  font-size: 64px;
+  font-family: 'Tourney', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+h2{
+  font-size: 90px;
+  font-family: 'Tourney', sans-serif;
+  background-color: #0a0001;
+  color: #F94F6D;
+  width: 110px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  /* margin: 20px; */
+
+}
+
+button{
+  cursor: pointer;
+  background-color: #b60e0e;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: 'Tourney', sans-serif;
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+}
+
+.timer-container {
+  font-size: 48px;
+  font-family: 'Tourney', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  /* border: 2px solid purple; */
+  /* padding: 20px 40px; */
+  border: none;
+  outline: none;
+  /* background-color: transparent; */
+  color: #000000;
+}
+
+
